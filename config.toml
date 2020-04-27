@@ -1,6 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
-title = "About Kyle"
+title = "San Joaquin Valley Town Hall"
 
 [markup.goldmark.renderer]
 unsafe= true
