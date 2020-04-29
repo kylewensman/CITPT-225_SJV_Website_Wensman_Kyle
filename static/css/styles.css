@@ -118,6 +118,17 @@ section{
 .jumbotron article{
     padding-left: 3em;
 }
+#mission{
+    width: 50%;
+    background-color: #193156;
+    color: white;
+    padding: 1.5rem;
+    margin: 0 auto;
+    border-radius: 18px
+}
+#mission h1{
+    text-align: center;
+}
 footer{
     color: white;
     text-align: center;
@@ -155,6 +166,9 @@ footer p{
         float: none;
         margin: 0 auto;
         display: block
+    }
+    #mission{
+        width: 100%;
     }
     .box{
         border: none;
