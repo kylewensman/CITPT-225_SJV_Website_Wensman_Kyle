@@ -129,6 +129,11 @@ section{
 #mission h1{
     text-align: center;
 }
+#speakers .col{
+    /* width: 50%; */
+    /* margin: 0 auto; */
+    text-align: center;
+}
 footer{
     color: white;
     text-align: center;
@@ -170,6 +175,7 @@ footer p{
     #mission{
         width: 100%;
     }
+    
     .box{
         border: none;
         transition: none;
