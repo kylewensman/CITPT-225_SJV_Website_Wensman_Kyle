@@ -1,3 +1,21 @@
+/* https://stackoverflow.com/questions/37872788/why-when-i-float-right-the-background-color-disappears?rq=1 */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -6,11 +24,15 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(https://3djungle.net/upload/resize_cache/iblock/826/400_400_1/82675ab29b1ab6020959fa3e6b52bf6b.jpg);
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 header{
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     border-bottom: 6px solid #EA8F27;
+}
+h1{
+    color: #EA8F27;
 }
 .navbar{
     background: #17263E !important;
@@ -28,6 +50,7 @@ header{
     color:  white !important;
     margin-left: 30px;
 }
+/* https://codepen.io/lesbaa/pen/dojGVL */
 .box {
     position:relative;
     text-align: center;
@@ -68,26 +91,31 @@ header{
 /* Navigation End */
 main{
     background-color: white;
-    padding: 10px;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
+    padding: 20px 20px 0 20px;
 }
 section{
-    padding: 1.5rem;
-    min-height: 500px;
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+    margin-bottom: 1.5rem;
+    /* border-radius: 4px; */
 }
-div{
-    width: 100%;
+/* .jumbotron{
+    background-color: #193156;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 10px;
+} */
+.jumbotron h2{
+    text-align: center;
 }
-#focal-img{
+.jumbotron img{
     width: 25%;
     min-width: 225px;
     float: right;
 }
-#speaker-of-the-month h2{
-    text-align: center;
-}
-article{
+.jumbotron article{
     padding-left: 3em;
 }
 footer{
@@ -113,6 +141,9 @@ footer p{
         width: 100%;
         margin: auto;
     }
+    .navbar ul li a{
+        margin-left: 0;
+    }
     main{
     width: 100%;
     }
@@ -120,7 +151,7 @@ footer p{
         padding-left: 0;
         padding-right: 0;
     }
-    #focal-img{
+    .jumbotron img{
         float: none;
         margin: 0 auto;
         display: block

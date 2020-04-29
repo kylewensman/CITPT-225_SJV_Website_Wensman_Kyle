@@ -1,32 +1,46 @@
 {{ define "main" }}
 
-<section id="speaker-of-the-month">
+<section class="jumbotron">
 	<h1>Speaker of the Month</h1>
 	<h2>February - Fossil Threads in the Web of Life</h2>
-	<!-- <div id="focal-img"> -->
-		<img id="focal-img" src="{{ .Site.BaseURL }}img/sampson_dinosaur.jpg" alt="">
-	<!-- </div> -->
-	<article>
+	<img src="{{ .Site.BaseURL }}img/sampson_dinosaur.jpg" alt="">
+	<article class="clearfix">
 		<h3>Scott Sampson</h3>
 		<p>What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum of Natural History, steps to the podium. Sampson's research has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa.</p>
 		</p>
 	</article>
 </section>
+<section style="background-color: #193156; color: white;  width: 50%; padding: 1.5rem; margin: 0 auto; border-radius: 18px">
+	<h1 style="text-align: center;">Our Mission</h1>
+	<p>San Joaquin Valley Town Hall is a non-profit organization that is run by an all-volunteer board of directors. Our mission is to bring nationally and internationally renowned, thought-provoking speakers who inform, educate, and entertain our audience! As one or our members told us:</p>
+	<blockquote>&ldquo;Each year I give a ticket package to each of our family members. I think of it as the gift of knowledge...and that is priceless.&rdquo;</blockquote>
+</section>
 <section>
-	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus animi veritatis tempore inventore! Delectus, illum quaerat, explicabo laboriosam minima voluptates quos id eius ipsum deserunt suscipit nihil perspiciatis architecto modi!</p>
-	<p>Quisquam nostrum voluptatum, accusamus quia deleniti architecto perferendis consequuntur molestiae magni veniam nesciunt voluptate quasi incidunt iure ab nam facere minus nemo nihil dicta saepe, aliquid dolorum tempora repellat? Optio.</p>
-	<p>Incidunt autem repudiandae saepe assumenda! Eos, commodi? Laboriosam adipisci voluptatibus ipsa blanditiis reiciendis quidem vero sunt, velit repudiandae labore corporis? Culpa consequuntur placeat numquam accusamus illo architecto quia ratione maxime.</p>
-	<p>Itaque vitae laudantium enim, delectus error cum optio aliquam ipsum? Dignissimos rerum sapiente quae harum nam dolore, nostrum aspernatur eos sunt voluptatibus quam, velit praesentium, magni voluptate alias veniam nulla?</p>
-	<p>Iste quas, molestias aspernatur rem qui ducimus illum nobis minima nostrum corrupti itaque aperiam impedit sed ullam provident quidem modi harum ex placeat fugiat autem, eos maiores saepe dolore! Minima.</p>
-	<p>Suscipit nam aperiam quidem nesciunt. Eum, fugit! Maiores ipsam libero sequi corporis est. Consequatur blanditiis voluptatem odio minus aut deleniti, dolor velit asperiores officia, delectus distinctio nulla qui! Porro, aliquid?</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero reprehenderit officiis sed voluptates earum aperiam fugit exercitationem cupiditate alias. Praesentium et tempora, sit nemo possimus magni earum autem iste!</p>
-	<p>Culpa nobis fuga ad maiores? Magnam ratione numquam sit facilis mollitia laudantium nisi placeat iusto inventore, autem officia odio unde cupiditate est, dicta nulla totam? Inventore neque nihil eos. Quasi.</p>
-	<p>Cum optio illum repellendus non, veniam cumque necessitatibus alias totam vel iste deleniti odit vero molestiae voluptatibus dignissimos reprehenderit vitae architecto quod ad illo beatae! Corporis earum sunt nisi consequuntur.</p>
-	<p>Aliquid dolorem omnis, est perferendis placeat repudiandae maxime! Aut expedita adipisci ratione quibusdam, repellat earum tempore sit harum dolores ducimus quia voluptatibus? Nulla cupiditate illo quidem fugit rem neque nihil!</p>
-	<p>Hic quo laboriosam quidem aperiam est saepe dolore rerum, ipsum sunt aspernatur in illo aliquam non perferendis? Tenetur distinctio amet rem ipsam expedita sequi, dolores pariatur, quod laudantium molestias quis!</p>
-	<p>Illum ipsa quidem vero! Dicta rerum incidunt ullam pariatur fugit quisquam odit assumenda natus doloribus, quae maxime porro veritatis culpa exercitationem fugiat laborum eaque earum! Culpa, quod! Eius, ex perspiciatis.</p>
-	<p>Illum dignissimos qui consectetur officia molestiae quia non optio quasi ea, id cupiditate reprehenderit perspiciatis nemo sapiente harum minima! Iusto nisi quae, accusamus deserunt amet explicabo facere. Dolor, corrupti veritatis?</p>
-	<p>Eius dolor placeat tempore quos, quis perferendis quaerat veniam accusantium asperiores quidem repellat alias itaque nulla maxime porro cum dolores dolorem et ipsa. Alias, id ducimus. Ullam quam quia dolores.</p>	
+	<h1>Speakers</h1>
+	<div class="container">
+		<div class="row">
+		  <div class="col-sm">
+			<h3>October</h3>
+			<img src="{{ .Site.BaseURL }}/img/toobin75.jpg" alt="">
+			<h4>Jeffrey Toobin</h4>
+		  </div>
+		  <div class="col-sm">
+			<h3>November</h3>
+			<img src="{{ .Site.BaseURL }}/img/sorkin75.jpg" alt="">
+			<h4>Andrew Ross Sorkin</h4>
+		  </div>
+		  <div class="col-sm">
+			<h3>January</h3>
+			<img src="{{ .Site.BaseURL }}/img/chua75.jpg" alt="">
+			<h4>Amy Chua</h4>
+		  </div>
+		  <div class="col-sm">
+			<h3>February</h3>
+			<img src="{{ .Site.BaseURL }}/img/sampson75.jpg" alt="">
+			<h4>Scott Sampson</h4>
+		  </div>
+		</div>
+	  </div>
 </section>
 
 {{ end }}
