@@ -1,71 +1,25 @@
-<!-- <img id="headerimg" class="veryrounded" src="{{ "img/header_template.png" | relURL }}" alt=""> -->
-<!-- <header id="header"> -->
-    
-    <!-- <nav class="navbar"> -->
-        <!-- <div class="navbar-start">
-            <h1 class="navbar-item title is-1">About Kyle</h1>
-        </div>
-        <div class="navbar-end">
-        <ul class="navbar-item">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <img src="{{ .Site.BaseURL }}../img/San_Joaquin_Valley_Town_Hall.jpg" alt="">
+    <a class="navbar-brand" href="{{ .Site.BaseURL }}">San Joaquin Valley Town Hall</a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-center link ml-auto">
             {{- $pages := slice .Site.Home -}}
             {{- $pages = $pages | append .Site.RegularPages.ByWeight -}}
             {{ range $pages }}
                 <li>
                     {{- if eq . $ -}}
-                        <a href="{{ .Site.BaseURL }}">{{ .Title }}</a>
+                        <a class="nav-item nav-link box curmudgeon" href="{{ .Site.BaseURL }}">Home</a>
                     {{- else -}}
-                        <a href="{{ with .Params.actualurl }}{{ . | relURL }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
+                        <a class="nav-item nav-link box curmudgeon" href="{{ with .Params.actualurl }}{{ . | relURL }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
                     {{- end -}}
                 </li>
             {{- end }}
-        </ul> -->
-
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <img src="{{ .Site.BaseURL }}../img/San_Joaquin_Valley_Town_Hall.jpg" alt="">
-            <a class="navbar-brand" href="{{ .Site.BaseURL }}">San Joaquin Valley Town Hall</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-center link ml-auto">
-                    {{- $pages := slice .Site.Home -}}
-                    {{- $pages = $pages | append .Site.RegularPages.ByWeight -}}
-                    {{ range $pages }}
-                        <li>
-                            {{- if eq . $ -}}
-                                <a class="nav-item nav-link box curmudgeon" href="{{ .Site.BaseURL }}">Home</a>
-                            {{- else -}}
-                                <a class="nav-item nav-link box curmudgeon" href="{{ with .Params.actualurl }}{{ . | relURL }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
-                            {{- end -}}
-                        </li>
-                    {{- end }}
-                </ul>
-            </div>
-        </nav>
-                    <!-- <a href="#" class="navbar-item is-active">Link</a>
-                    <a href="#" class="navbar-item">Link</a>
-                    <a href="#" class="navbar-item">Link</a>
-                    <a href="#" class="navbar-item">Link</a>
-                    <a href="#" class="navbar-item">Link</a> -->
-                    <!-- <ul class="navbar-item">
-                        {{- $pages := slice .Site.Home -}}
-                        {{- $pages = $pages | append .Site.RegularPages.ByWeight -}}
-                        {{ range $pages }}
-                            <li>
-                                {{- if eq . $ -}}
-                                    <a class="navbar-item" href="{{ .Site.BaseURL }}">{{ .Title }}</a>
-                                {{- else -}}
-                                    <a class="navbar-item" href="{{ with .Params.actualurl }}{{ . | relURL }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
-                                {{- end -}}
-                            </li>
-                        {{- end }}
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-        <!-- </div>
-    </nav> -->
-<!-- </header> -->
+        </ul>
+    </div>
+</nav>
 <script>
     (function() {
         const links = document.getElementsByTagName('a')
