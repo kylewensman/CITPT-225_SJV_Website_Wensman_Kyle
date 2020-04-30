@@ -18,6 +18,7 @@
 
 *{
     box-sizing: border-box;
+    
 }
 body{
     margin: 0;
@@ -91,6 +92,9 @@ section{
     /* if change margin-bottom also change #mission */
     margin-bottom: 2em;
 }
+.jumbotron h1{
+    font-size: 2.25em;
+}
 .jumbotron h2{
     text-align: center;
 }
@@ -146,6 +150,9 @@ footer p{
 
 
 @media only screen and (max-width: 992px){
+    html {
+        font-size: 14px;
+    }
     body{
         background: none;
         width: 100;
