@@ -35,6 +35,7 @@ header{
 h1{
     color: #EA8F27;
 }
+/* Navigation Start */
 .navbar{
     background: #17263E !important;
 }
@@ -51,7 +52,9 @@ h1{
     color:  white !important;
     margin-left: 30px;
 }
+
 /* https://codepen.io/lesbaa/pen/dojGVL */
+
 .box {
     position:relative;
     text-align: center;
@@ -166,7 +169,7 @@ footer p{
         margin-left: 0;
     }
     main{
-    width: 100%;
+        width: 100%;
     }
     section{
         padding-left: 0;
@@ -180,7 +183,6 @@ footer p{
     #mission{
         width: 100%;
     }
-    
     .box{
         border: none;
         transition: none;
